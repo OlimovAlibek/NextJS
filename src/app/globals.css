@@ -1,3 +1,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+:root {
+    --primary-color: #2C3E50; /* Dark blue */
+    --secondary-color: #ECF0F1; /* Light gray */
+    --accent-color: blue; /* Red */
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  h1 {
+    color: var(--primary-color);
+  }
+  
+  p {
+    color: var(--primary-color);
+  }
+  
+  .link-button {
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .link-button:hover {
+    background-color: var(--accent-color);
+    color: #fff;
+  }
+
+  a:hover {
+    color: var(--accent-color); /* or another color of your choice */
+}
+  
+
