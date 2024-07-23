@@ -28,12 +28,16 @@
   }
   
   .link-button:hover {
-    background-color: var(--accent-color);
+    background-color: var(--primary-color);
     color: #fff;
   }
 
   a:hover {
-    color: var(--accent-color); /* or another color of your choice */
+    color: var(--primary-color); /* or another color of your choice */
+}
+
+.placeholder-lightblue::placeholder {
+  color: #58a1f4;
 }
   
 

@@ -13,6 +13,14 @@ const links = [
     { url: '/contact', title: 'Contact' }
 ];
 
+const socialLinks = [
+    { url: "https://github.com/OlimovAlibek", img: "/github.png", alt: "github" },
+    { url: "https://linkedin.com/in/OlimovAlibek", img: "/linkedin.png", alt: "linkedin" },
+    { url: "https://t.me/Olimov_Alibek", img: "/telegram.png", alt: "telegram" },
+    { url: "https://instagram.com/Olimov__Alibek", img: "/instagram.png", alt: "instagram" },
+    { url: "https://t.me/AlibekBlog", img: "/blog.png", alt: "blog"  }
+];
+
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
@@ -60,28 +68,22 @@ const Navbar = () => {
             </div>
 
             <div className='hidden md:flex items-center gap-4 w-1/3 justify-end'>
-                <Link href="https://github.com/OlimovAlibek">
-                    <Image src="/github.png" alt='github' width={24} height={24} />
-                </Link>
-                <Link href="https://linkedin.com/in/OlimovAlibek">
-                    <Image src="/linkedin.png" alt='linkedin' width={24} height={24} />
-                </Link>
-                <Link href="https://t.me/Olimov_Alibek">
-                    <Image src="/telegram.png" alt='telegram' width={24} height={24} />
-                </Link>
-                <Link href="https://instagram.com/Olimov__Alibek">
-                    <Image src="/instagram.png" alt='instagram' width={24} height={24} />
-                </Link>
-                <Link href="/">
-                    <Image src="/pinterest.png" alt='pinterest' width={24} height={24} />
-                </Link>
+                {socialLinks.map((socialLink, index) => (
+                    <Link key={index} target='_blank' href={socialLink.url}>
+                        {socialLink.icon ? (
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="Chat-3-Line--Streamline-Mingcute" height="28" width="28"><desc>Chat 3 Line Streamline Icon: https://streamlinehq.com</desc><g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.593 23.258l-0.011 0.002 -0.071 0.035 -0.02 0.004 -0.014 -0.004 -0.071 -0.035c-0.01 -0.004 -0.019 -0.001 -0.024 0.005l-0.004 0.01 -0.017 0.428 0.005 0.02 0.01 0.013 0.104 0.074 0.015 0.004 0.012 -0.004 0.104 -0.074 0.012 -0.016 0.004 -0.017 -0.017 -0.427c-0.002 -0.01 -0.009 -0.017 -0.017 -0.018Zm0.265 -0.113 -0.013 0.002 -0.185 0.093 -0.01 0.01 -0.003 0.011 0.018 0.43 0.005 0.012 0.008 0.007 0.201 0.093c0.012 0.004 0.023 0 0.029 -0.008l0.004 -0.014 -0.034 -0.614c-0.003 -0.012 -0.01 -0.02 -0.02 -0.022Zm-0.715 0.002a0.023 0.023 0 0 0 -0.027 0.006l-0.006 0.014 -0.034 0.614c0 0.012 0.007 0.02 0.017 0.024l0.015 -0.002 0.201 -0.093 0.01 -0.008 0.004 -0.011 0.017 -0.43 -0.003 -0.012 -0.01 -0.01 -0.184 -0.092Z" stroke-width="1"></path><path fill="#000000" d="M12 5c-4.597 0 -8 3.073 -8 6.5 0 2.014 1.141 3.872 3.042 5.096 0.738 0.476 0.939 1.403 0.972 2.222 0.753 -0.31 1.258 -1.16 2.172 -0.986 0.582 0.11 1.189 0.168 1.814 0.168 4.597 0 8 -3.073 8 -6.5S16.597 5 12 5ZM2 11.5C2 6.643 6.656 3 12 3s10 3.643 10 8.5S17.344 20 12 20c-0.653 0 -1.292 -0.053 -1.911 -0.155 -0.093 0.073 -0.253 0.205 -0.45 0.344C9.07 20.59 8.249 21 7 21a1 1 0 0 1 -1 -1c0 -0.55 0.143 -1.234 -0.094 -1.756C3.577 16.723 2 14.298 2 11.5Z" stroke-width="1"></path></g></svg>
+                        ) : (
+                            <Image src={socialLink.img} alt={socialLink.alt} width={24} height={24} />
+                        )}
+                    </Link>
+                ))}
             </div>
 
             <div className='md:hidden'>
                 <button className='w-10 h-8 flex flex-col justify-between z-20 relative' onClick={() => setMenuOpen(!menuOpen)}>
-                    <motion.div variants={topVariants} animate={menuOpen ? "opened" : "closed"} className='w-10 h-1 bg-blue-400 rounded origin-left'></motion.div>
-                    <motion.div variants={centerVariants} animate={menuOpen ? "opened" : "closed"} className='w-10 h-1 bg-blue-400 rounded origin-left'></motion.div>
-                    <motion.div variants={bottomVariants} animate={menuOpen ? "opened" : "closed"} className='w-10 h-1 bg-blue-400 rounded origin-left'></motion.div>
+                    <motion.div variants={topVariants} animate={menuOpen ? "opened" : "closed"} className='w-10 h-1 bg-[#2C3E50] rounded origin-left'></motion.div>
+                    <motion.div variants={centerVariants} animate={menuOpen ? "opened" : "closed"} className='w-10 h-1 bg-[#2C3E50] rounded origin-left'></motion.div>
+                    <motion.div variants={bottomVariants} animate={menuOpen ? "opened" : "closed"} className='w-10 h-1 bg-[#2C3E50] rounded origin-left'></motion.div>
                 </button>
 
                 {menuOpen && (
@@ -91,6 +93,19 @@ const Navbar = () => {
                                 <Link href={link.url}>{link.title}</Link>
                             </motion.div>
                         ))}
+                        <motion.div className='flex gap-4'>
+                            {socialLinks.map((socialLink, index) => (
+                                <motion.div key={index} variants={listItemVariants}>
+                                    <Link target='_blank' href={socialLink.url}>
+                                        {socialLink.icon ? (
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="Chat-3-Line--Streamline-Mingcute" height="28" width="28"><desc>Chat 3 Line Streamline Icon: https://streamlinehq.com</desc><g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.593 23.258l-0.011 0.002 -0.071 0.035 -0.02 0.004 -0.014 -0.004 -0.071 -0.035c-0.01 -0.004 -0.019 -0.001 -0.024 0.005l-0.004 0.01 -0.017 0.428 0.005 0.02 0.01 0.013 0.104 0.074 0.015 0.004 0.012 -0.004 0.104 -0.074 0.012 -0.016 0.004 -0.017 -0.017 -0.427c-0.002 -0.01 -0.009 -0.017 -0.017 -0.018Zm0.265 -0.113 -0.013 0.002 -0.185 0.093 -0.01 0.01 -0.003 0.011 0.018 0.43 0.005 0.012 0.008 0.007 0.201 0.093c0.012 0.004 0.023 0 0.029 -0.008l0.004 -0.014 -0.034 -0.614c-0.003 -0.012 -0.01 -0.02 -0.02 -0.022Zm-0.715 0.002a0.023 0.023 0 0 0 -0.027 0.006l-0.006 0.014 -0.034 0.614c0 0.012 0.007 0.02 0.017 0.024l0.015 -0.002 0.201 -0.093 0.01 -0.008 0.004 -0.011 0.017 -0.43 -0.003 -0.012 -0.01 -0.01 -0.184 -0.092Z" stroke-width="1"></path><path fill="#000000" d="M12 5c-4.597 0 -8 3.073 -8 6.5 0 2.014 1.141 3.872 3.042 5.096 0.738 0.476 0.939 1.403 0.972 2.222 0.753 -0.31 1.258 -1.16 2.172 -0.986 0.582 0.11 1.189 0.168 1.814 0.168 4.597 0 8 -3.073 8 -6.5S16.597 5 12 5ZM2 11.5C2 6.643 6.656 3 12 3s10 3.643 10 8.5S17.344 20 12 20c-0.653 0 -1.292 -0.053 -1.911 -0.155 -0.093 0.073 -0.253 0.205 -0.45 0.344C9.07 20.59 8.249 21 7 21a1 1 0 0 1 -1 -1c0 -0.55 0.143 -1.234 -0.094 -1.756C3.577 16.723 2 14.298 2 11.5Z" stroke-width="1"></path></g></svg>
+                                        ) : (
+                                            <Image src={socialLink.img} alt={socialLink.alt} width={24} height={24} />
+                                        )}
+                                    </Link>
+                                </motion.div>
+                            ))}
+                        </motion.div>
                     </motion.div>
                 )}
             </div>

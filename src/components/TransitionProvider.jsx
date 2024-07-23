@@ -26,7 +26,7 @@ const TransitionProvider = ({ children }) => {
           exit={{ opacity: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          {pathName.substring(1).toUpperCase()}
+          {pathName.substring(1).charAt(0).toUpperCase() + pathName.substring(2)}
         </motion.div>
         <motion.div
           className="h-screen w-screen fixed bg-black rounded-t-[100px] bottom-0 z-30"

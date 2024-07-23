@@ -25,6 +25,7 @@ const AboutPage = () => {
     >
       {/* CONTAINER */}
       <div className="h-full overflow-scroll lg:flex" ref={containerRef}>
+        
         {/* TEXT CONTAINER */}
         <div className="p-4 sm:p-8 md:p-12 lg:p-20 xl:p-48 flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-64 lg:w-2/3 lg:pr-0 xl:w-1/2">
           {/* BIOGRAPHY CONTAINER */}
@@ -249,7 +250,7 @@ const AboutPage = () => {
                   </div>
                   {/* JOB COMPANY */}
                   <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
-                    O'zbek O'quv Avtomatika
+                    Cifra Energy
                   </div>
                 </div>
                 {/* CENTER */}
@@ -291,7 +292,7 @@ const AboutPage = () => {
                   </div>
                   {/* JOB COMPANY */}
                   <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
-                    OyTickets.uz
+                    Oy-Gul.uz
                   </div>
                 </div>
               </div>
