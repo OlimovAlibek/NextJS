@@ -16,6 +16,7 @@ const AboutPage = () => {
   const experienceRef = useRef();
   const isExperienceRefInView = useInView(experienceRef, { margin: "-100px" });
 
+
   return (
     <motion.div
       className="h-full"
@@ -24,7 +25,7 @@ const AboutPage = () => {
       transition={{ duration: 1 }}
     >
       {/* CONTAINER */}
-      <div className="h-full overflow-scroll lg:flex" ref={containerRef}>
+      <div className="h-full overflow-scroll lg:flex dark:bg-gray-900 dark:text-white" ref={containerRef}>
         
         {/* TEXT CONTAINER */}
         <div className="p-4 sm:p-8 md:p-12 lg:p-20 xl:p-48 flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-64 lg:w-2/3 lg:pr-0 xl:w-1/2">
@@ -39,9 +40,9 @@ const AboutPage = () => {
               className="w-28 h-28 rounded-full object-cover"
             />
             {/* BIOGRAPHY TITLE */}
-<h1 className="font-bold text-2xl">BIOGRAPHY</h1>
+<h1 className="font-bold text-2xl dark:text-gray-100">BIOGRAPHY</h1>
 {/* BIOGRAPHY DESC */}
-<p className="text-lg">
+<p className="text-lg dark:text-gray-300">
   Hello! I'm Ali, a passionate and dedicated front-end developer with a strong background in JavaScript, React, and Next.js. My journey in the tech world began at a young age, and over the years, I've honed my skills through various projects and collaborations.
   <br /><br />
   My recent endeavors include creating user-friendly web applications, optimizing user experiences, and continually learning new technologies to stay ahead in this fast-paced industry. I believe in the power of collaboration and communication to bring innovative solutions to life.
@@ -49,7 +50,7 @@ const AboutPage = () => {
 {/* BIOGRAPHY QUOTE */}
 
 <div>
-<span className="italic">
+<span className="italic dark:text-gray-400">
   "I dont stop when I am tired, I stop when I am done."
 </span>
 
@@ -101,7 +102,7 @@ const AboutPage = () => {
               initial={{ x: "-300px" }}
               animate={isSkillRefInView ? { x: 0 } : {}}
               transition={{ delay: 0.2 }}
-              className="font-bold text-2xl"
+              className="font-bold text-2xl dark:text-gray-100"
             >
               SKILLS
             </motion.h1>
@@ -111,79 +112,79 @@ const AboutPage = () => {
               animate={isSkillRefInView ? { x: 0 } : {}}
               className="flex gap-4 flex-wrap"
             >
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 hover:ring-black">
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 hover:ring-black dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white">
                 JavaScript
               </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 hover:ring-black">
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
                 TypeScript
               </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 hover:ring-black">
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
                 React.js
               </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 hover:ring-black">
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
                 Next.js
               </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 hover:ring-black">
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
                 SCSS
               </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 hover:ring-black">
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
                 Tailwind CSS
               </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 hover:ring-black">
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
                 MongoDB
               </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 hover:ring-black">
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
                 PostgreSQL
               </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 hover:ring-black">
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
                 Node.js
               </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 hover:ring-black">
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
                 Nest.js
               </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 hover:ring-black">
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
                 Express.js
               </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 hover:ring-black">
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
                 Spring Boot
               </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 hover:ring-black">
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
                 GraphQL
               </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 hover:ring-black">
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
                 Apollo
               </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 hover:ring-black">
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
                 Redux
               </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 hover:ring-black">
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
                 Framer Motion
               </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 hover:ring-black">
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
                 Three.js
               </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 hover:ring-black">
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
                 WebGL
               </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 hover:ring-black">
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
                 Webpack
               </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 hover:ring-black">
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
                 Vite
               </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 hover:ring-black">
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
                 Docker
               </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 hover:ring-black">
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
                 AWS
               </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 hover:ring-black">
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
                 Firebase
               </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 hover:ring-black">
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
                 Git
               </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 hover:ring-black">
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
                 Figma
               </div>
             </motion.div>
@@ -221,7 +222,7 @@ const AboutPage = () => {
               initial={{ x: "-300px" }}
               animate={isExperienceRefInView ? { x: "0" } : {}}
               transition={{ delay: 0.2 }}
-              className="font-bold text-2xl"
+              className="font-bold text-2xl dark:text-gray-100"
             >
               EXPERIENCE
             </motion.h1>
@@ -236,7 +237,7 @@ const AboutPage = () => {
                 {/* LEFT */}
                 <div className="w-1/3 ">
                   {/* JOB TITLE */}
-                  <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
+                  <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg dark:text-black">
                     Web Developer
                   </div>
                   {/* JOB DESC */}
@@ -249,7 +250,7 @@ const AboutPage = () => {
                     June - Septemper 2023
                   </div>
                   {/* JOB COMPANY */}
-                  <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
+                  <div className="p-1 rounded bg-white text-sm font-semibold w-fit dark:text-black">
                     Cifra Energy
                   </div>
                 </div>
@@ -279,7 +280,7 @@ const AboutPage = () => {
                 {/* RIGHT */}
                 <div className="w-1/3 ">
                   {/* JOB TITLE */}
-                  <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
+                  <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg dark:text-black">
                     FrontEnd Developer
                   </div>
                   {/* JOB DESC */}
@@ -291,44 +292,13 @@ const AboutPage = () => {
                     January - May 2024{" "}
                   </div>
                   {/* JOB COMPANY */}
-                  <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
+                  <div className="p-1 rounded bg-white text-sm font-semibold w-fit dark:text-black">
                     Oy-Gul.uz
                   </div>
                 </div>
               </div>
               {/* EXPERIENCE LIST ITEM */}
-              <div className="flex justify-between h-80">
-                {/* LEFT */}
-                <div className="w-1/3 ">
-                  {/* JOB TITLE */}
-                  <div className="bg-white p-3 font-semibold rounded-b-lg mt-2 rounded-s-lg">
-                    Front End Developer{" "}
-                  </div>
-                  {/* JOB DESC */}
-                  <div className="p-3 text-sm italic">
-                  Creating user-friendly websites to show the
-                  companys' services.{" "}
-                  </div>
-                  {/* JOB DATE */}
-                  <div className="p-3 text-red-400 text-sm font-semibold">
-                    July - Present 2024{" "}
-                  </div>
-                  {/* JOB COMPANY */}
-                  <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
-                    ALRUT Buildings
-                  </div>
-                </div>
-                {/* CENTER */}
-                <div className="w-1/6 flex justify-center">
-                  {/* LINE */}
-                  <div className="w-1 h-full bg-gray-600 rounded relative">
-                    {/* LINE CIRCLE */}
-                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
-                  </div>
-                </div>
-                {/* RIGHT */}
-                <div className="w-1/3 "></div>
-              </div>
+              
             </motion.div>
           </div>
         </div>

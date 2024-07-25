@@ -53,7 +53,7 @@ const PortfolioPage = () => {
       transition={{ duration: 1 }}
     >
       <div className="h-[600vh] relative" ref={ref}>
-        <div className="w-screen h-[calc(100vh-6rem)] flex items-center justify-center text-8xl text-center">
+        <div className="w-screen h-[calc(100vh-6rem)] flex items-center justify-center text-8xl text-center dark:text-white">
           My Works
         </div>
         <div className="sticky top-0 flex h-screen gap-4 items-center overflow-hidden">
@@ -83,8 +83,8 @@ const PortfolioPage = () => {
           </motion.div>
         </div>
       </div>
-      <div className="w-screen h-screen flex flex-col gap-16 items-center justify-center text-center">
-        <h1 className="text-8xl">Do you have a project?</h1>
+      <div className="w-screen h-screen flex flex-col gap-16 items-center justify-center text-center dark:bg-black">
+        <h1 className="text-8xl dark:text-white">Do you have a project?</h1>
         <div className="relative">
           <motion.svg
             animate={{ rotate: 360 }}
@@ -98,15 +98,15 @@ const PortfolioPage = () => {
                 d="M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "
               />
             </defs>
-            <text fill="#000">
-              <textPath xlinkHref="#circlePath" className="text-xl">
-                Front-end Developer and UI Designer
+            <text>
+              <textPath xlinkHref="#circlePath" className="text-xl dark:text-white">
+                Front-end Developer
               </textPath>
             </text>
           </motion.svg>
           <Link
             href="/contact"
-            className="w-16 h-16 md:w-28 md:h-28 absolute top-0 left-0 right-0 bottom-0 m-auto bg-black text-white rounded-full flex items-center justify-center"
+            className="w-16 h-16 md:w-28 md:h-28 absolute top-0 left-0 right-0 bottom-0 m-auto bg-black text-white rounded-full flex items-center justify-center dark:bg-white dark:text-black dark:hover:bg-black dark:hover:text-white dark:hover:ring-white dark:ring-1"
           >
             Hire Me
           </Link>
