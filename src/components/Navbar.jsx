@@ -55,6 +55,11 @@ const Navbar = () => {
 
     return (
         <div className='h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 text-xl dark:bg-gray-900 text-black dark:text-white'>
+
+            <div className="absolute top-0 left-0 w-full bg-red-500 text-white text-center py-[1]">
+                Test Regime
+            </div>
+
             <div className='flex items-center gap-4 w-1/3'>
                 <Link href='/' className='text-2xl font-bold flex items-center'>
                     <span className='mr-2'>ALI</span>
