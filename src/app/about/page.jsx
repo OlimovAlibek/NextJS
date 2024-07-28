@@ -112,79 +112,79 @@ const AboutPage = () => {
               animate={isSkillRefInView ? { x: 0 } : {}}
               className="flex gap-4 flex-wrap"
             >
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 hover:ring-black dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white">
+              <div className="rounded  p-3 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 hover:ring-black dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white">
                 JavaScript
               </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
+              <div className="rounded  p-3 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
                 TypeScript
               </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
+              <div className="rounded  p-3 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
                 React.js
               </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
+              <div className="rounded  p-3 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
                 Next.js
               </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
+              <div className="rounded  p-3 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
                 SCSS
               </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
+              <div className="rounded  p-3 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
                 Tailwind CSS
               </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
+              {/* <div className="rounded  p-3 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
                 MongoDB
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
+              </div> */}
+              {/* <div className="rounded  p-3 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
                 PostgreSQL
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
+              </div> */}
+              {/* <div className="rounded  p-3 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
                 Node.js
               </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
+              <div className="rounded  p-3 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
                 Nest.js
+              </div> */}
+              <div className="rounded  p-3 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
+                Django
               </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
-                Express.js
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
+              {/* <div className="rounded  p-3 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
                 Spring Boot
               </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
+              <div className="rounded  p-3 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
                 GraphQL
               </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
+              <div className="rounded  p-3 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
                 Apollo
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
+              </div> */}
+              <div className="rounded  p-3 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
                 Redux
               </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
+              <div className="rounded  p-3 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
                 Framer Motion
               </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
+              <div className="rounded  p-3 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
                 Three.js
               </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
+              {/* <div className="rounded  p-3 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
                 WebGL
+              </div> */}
+              <div className="rounded  p-3 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
+                Material UI
               </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
-                Webpack
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
+              <div className="rounded  p-3 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
                 Vite
               </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
-                Docker
+              <div className="rounded  p-3 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
+                GitHub
               </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
-                AWS
+              <div className="rounded  p-3 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
+                GitLab
               </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
+              <div className="rounded  p-3 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
                 Firebase
               </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
+              <div className="rounded  p-3 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
                 Git
               </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
+              <div className="rounded  p-3 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
                 Figma
               </div>
             </motion.div>
