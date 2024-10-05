@@ -235,23 +235,24 @@ const AboutPage = () => {
               {/* EXPERIENCE LIST ITEM */}
               <div className="flex justify-between h-80">
                 {/* LEFT */}
-                <div className="w-1/3 ">
+                <div className="w-2/3 ">
                   {/* JOB TITLE */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg dark:text-black">
-                    Web Developer
+                    WEB DEVELOPER
                   </div>
                   {/* JOB DESC */}
                   <div className="p-3 text-sm italic">
-                  Developed an informational website to enhance the
-                      company's online presence.{" "}
+                  Supported IT infrastructure for educational initiatives,
+which enhanced my problem-solving and cross-
+disciplinary teamwork abilities.{" "}
                   </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">
-                    June - Septemper 2023
+                    May 2023 - July 2023
                   </div>
                   {/* JOB COMPANY */}
                   <div className="p-1 rounded bg-white text-sm font-semibold w-fit dark:text-black">
-                    Cifra Energy
+                    USTOZ AI
                   </div>
                 </div>
                 {/* CENTER */}
@@ -278,25 +279,61 @@ const AboutPage = () => {
                   </div>
                 </div>
                 {/* RIGHT */}
-                <div className="w-1/3 ">
+                <div className="w-2/3 ">
                   {/* JOB TITLE */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg dark:text-black">
-                    FrontEnd Developer
+                  WEB DEVELOPER
                   </div>
                   {/* JOB DESC */}
                   <div className="p-3 text-sm italic">
-                    Collaborated with a team of experienced front-end devs to build a high-impact project.{" "}
+                  Independently managed the entire development
+process, gaining experience with HTML5, CSS3,
+JavaScript, and performance optimization.{" "}
                   </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">
-                    January - May 2024{" "}
+                    June 2023 - September 2024{" "}
                   </div>
                   {/* JOB COMPANY */}
                   <div className="p-1 rounded bg-white text-sm font-semibold w-fit dark:text-black">
-                    Oy-Gul.uz
+                    CIFRA ENERGY
                   </div>
                 </div>
               </div>
+              <div className="flex justify-between h-80">
+                {/* LEFT */}
+                <div className="w-2/3 ">
+                  {/* JOB TITLE */}
+                  <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg dark:text-black">
+                    FRONT-END DEVELOPER
+                  </div>
+                  {/* JOB DESC */}
+                  <div className="p-3 text-sm italic">
+                  Developed and implemented front-end components for
+the merchant CRM system at crm.oy-gul.uz, ensuring
+the platform was user-friendly and visually appealing.{" "}
+                  </div>
+                  {/* JOB DATE */}
+                  <div className="p-3 text-red-400 text-sm font-semibold">
+                    January 2024 - May 2024
+                  </div>
+                  {/* JOB COMPANY */}
+                  <div className="p-1 rounded bg-white text-sm font-semibold w-fit dark:text-black">
+                    OY STARTECH LLC
+                  </div>
+                </div>
+                {/* CENTER */}
+                <div className="w-1/6 flex justify-center">
+                  {/* LINE */}
+                  <div className="w-1 h-full bg-gray-600 rounded relative">
+                    {/* LINE CIRCLE */}
+                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
+                  </div>
+                </div>
+                {/* RIGHT */}
+                <div className="w-1/3 "></div>
+              </div>
+              
               {/* EXPERIENCE LIST ITEM */}
               
             </motion.div>

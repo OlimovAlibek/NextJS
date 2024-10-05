@@ -8,7 +8,7 @@ const items = [
   {
     id: 1,
     color: "from-blue-300 to-red-300 ",
-    title: "Oy GUL",
+    title: "OY GUL",
     desc: "Marketplace of flowers in Uzbekistan. Contributed to real project with experienced team of developers during internship in Oy-Gul.uz",
     img: "/oygul.png",
     link: "https://oy-gul.uz",
@@ -16,34 +16,60 @@ const items = [
   {
     id: 2,
     color: "from-red-300 to-violet-300",
-    title: "Meddent",
-    desc: "Created informational website for stomatology named Meddent",
-    img: "https://meddent.uz/images/logo.png",
-    link: "https://meddent.uz",
+    title: "O'zbek O'quv Avtomatika",
+    desc: "Developed dynamic informational website for company named O'zbek O'quv Avtomatika",
+    img: "https://uzua.uz/wp-content/uploads/2022/09/logo-UUA-sinij.svg",
+    link: "https://uzua.uz",
   },
   {
     id: 3,
     color: "from-violet-300 to-purple-300",
+    title: "OY TICKETS",
+    desc: "Contributed to real project while working in OY STARTECH LLC",
+    img: "/oytickets.png",
+    link: "https://oytickets.uz",
+  },
+  {
+    id: 4,
+    color: "from-purple-300 to-blue-300",
     title: "Newish Journal",
     desc: "Created a website for University's journal and newspaper",
     img: "/newish.png",
     link: "https://newish.netlify.app",
   },
   {
-    id: 4,
-    color: "from-purple-300 to-blue-300",
-    title: "Spotify Music App",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-    img: "https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    link: "/",
+    id: 5,
+    color: "from-blue-300 to-red-300",
+    title: "Cifra Energy Uz",
+    desc: "Developed dynamic informational website while working in CifraEnergyUz",
+    img: "/cifraenergy.png",
+    link: "https://cifraenergy.uz",
   },
+  {
+    id: 6,
+    color: "from-red-300 to-yellow-300",
+    title: "Meddent",
+    desc: "Created a single-page website for Meddent Stomotology",
+    img: "https://meddent.uz/images/logo.png",
+    link: "https://meddent.uz",
+  },
+  {
+    id: 7,
+    color: "from-yellow-300 to-blue-300",
+    title: "Github",
+    desc: "All other projects are in my Github",
+    img: "/githubbig.png",
+    link: "https://github.com/OlimovAlibek",
+  },
+  
+  
 ];
 
 const PortfolioPage = () => {
   const ref = useRef();
 
   const { scrollYProgress } = useScroll({ target: ref });
-  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-80%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-85%"]);
 
   return (
     <motion.div

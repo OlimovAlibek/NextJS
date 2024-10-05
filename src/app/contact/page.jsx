@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { FaLinkedin, FaGithub, FaInstagram, FaTelegram, FaTwitter, FaBlogger } from "react-icons/fa"; // Import social icons
 
 const ContactPage = () => {
   const [success, setSuccess] = useState(false);
@@ -71,11 +72,12 @@ const ContactPage = () => {
             😊
           </div>
         </div>
+
         {/* FORM CONTAINER */}
         <form
           onSubmit={sendEmail}
           ref={form}
-          className="h-1/2 lg:h-full lg:w-1/2 bg-blue-300 dark:bg-gray-900 rounded-xl text-xl flex flex-col gap-4 justify-center p-4 sm:p-12 md:p-16 lg:p-24"
+          className="h-2/3 lg:h-full lg:w-1/2 bg-blue-300 dark:bg-gray-900 rounded-xl text-xl flex flex-col pb-20 gap-4 justify-center p-4 sm:p-12 md:p-16 lg:p-24"
         >
           <span className="font-bold text-gray-700 dark:text-white">Dear Ali,</span>
           <textarea
@@ -108,6 +110,28 @@ const ContactPage = () => {
               Something went wrong!
             </span>
           )}
+
+          {/* Social Media Icons Section */}
+          <div className="flex justify-center space-x-6 mt-8">
+            <a href="https://linkedin.com/in/OlimovAlibek" target="_blank" rel="noopener noreferrer" className="text-blue-700 dark:text-white hover:text-blue-500 transition-transform transform hover:scale-125">
+              <FaLinkedin size={30} />
+            </a>
+            <a href="https://github.com/OlimovAlibek" target="_blank" rel="noopener noreferrer" className="text-gray-700 dark:text-white hover:text-gray-500 transition-transform transform hover:scale-125">
+              <FaGithub size={30} />
+            </a>
+            <a href="https://instagram.com/Olimov__Alibek" target="_blank" rel="noopener noreferrer" className="text-pink-500 dark:text-white hover:text-pink-300 transition-transform transform hover:scale-125">
+              <FaInstagram size={30} />
+            </a>
+            <a href="https://t.me/OlimovAlibek" target="_blank" rel="noopener noreferrer" className="text-blue-400 dark:text-white hover:text-white-300 transition-transform transform hover:scale-125">
+              <FaTelegram size={30} />
+            </a>
+            <a href="https://twitter.com/OlimovAlibek" target="_blank" rel="noopener noreferrer" className="text-blue-500 dark:text-white hover:text-blue-400 transition-transform transform hover:scale-125">
+              <FaTwitter size={30} />
+            </a>
+            <a href="https://t.me/AlibekBlog" target="_blank" rel="noopener noreferrer" className="text-orange-600 dark:text-white hover:text-orange-400 transition-transform transform hover:scale-125">
+              <FaBlogger size={30} />
+            </a>
+          </div>
         </form>
       </div>
     </motion.div>
