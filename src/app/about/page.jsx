@@ -43,7 +43,7 @@ const AboutPage = () => {
 <h1 className="font-bold text-2xl dark:text-gray-100">BIOGRAPHY</h1>
 {/* BIOGRAPHY DESC */}
 <p className="text-lg dark:text-gray-300">
-  Hello! I'm Ali, a passionate and dedicated front-end developer with a strong background in JavaScript, React, and Next.js. My journey in the tech world began at a young age, and over the years, I've honed my skills through various projects and collaborations.
+  Hello! I'm Ali, a passionate and dedicated web developer with a strong background in JavaScript, React, and Next.js. My journey in the tech world began at a young age, and over the years, I've honed my skills through various projects and collaborations.
   <br /><br />
   My recent endeavors include creating user-friendly web applications, optimizing user experiences, and continually learning new technologies to stay ahead in this fast-paced industry. I believe in the power of collaboration and communication to bring innovative solutions to life.
 </p>
@@ -116,7 +116,7 @@ const AboutPage = () => {
                 JavaScript
               </div>
               <div className="rounded  p-3 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
-                TypeScript
+                Python
               </div>
               <div className="rounded  p-3 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
                 React.js
@@ -130,18 +130,18 @@ const AboutPage = () => {
               <div className="rounded  p-3 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
                 Tailwind CSS
               </div>
-              {/* <div className="rounded  p-3 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
+              <div className="rounded  p-3 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
                 MongoDB
-              </div> */}
-              {/* <div className="rounded  p-3 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
+              </div>
+              <div className="rounded  p-3 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
                 PostgreSQL
-              </div> */}
-              {/* <div className="rounded  p-3 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
+              </div>
+              <div className="rounded  p-3 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
                 Node.js
               </div>
               <div className="rounded  p-3 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
                 Nest.js
-              </div> */}
+              </div> 
               <div className="rounded  p-3 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
                 Django
               </div>
@@ -163,9 +163,9 @@ const AboutPage = () => {
               <div className="rounded  p-3 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
                 Three.js
               </div>
-              {/* <div className="rounded  p-3 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
-                WebGL
-              </div> */}
+              <div className="rounded  p-3 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
+                TypeScript
+              </div>
               <div className="rounded  p-3 text-sm cursor-pointer bg-black text-white hover:bg-transparent hover:text-black hover:ring-1 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-transparent dark:hover:ring-white hover:ring-black">
                 Material UI
               </div>
@@ -238,21 +238,20 @@ const AboutPage = () => {
                 <div className="w-2/3 ">
                   {/* JOB TITLE */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg dark:text-black">
-                    WEB DEVELOPER
+                    SOFTWARE ENGINEER INTERN
                   </div>
                   {/* JOB DESC */}
                   <div className="p-3 text-sm italic">
-                  Supported IT infrastructure for educational initiatives,
-which enhanced my problem-solving and cross-
-disciplinary teamwork abilities.{" "}
+                  Contributed to the development and completion of government websites, working on both
+front-end and back-end functionalities using JavaScript, Python, and RESTful APIs.{" "}
                   </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">
-                    May 2023 - July 2023
+                    Jan 2025 - Present
                   </div>
                   {/* JOB COMPANY */}
                   <div className="p-1 rounded bg-white text-sm font-semibold w-fit dark:text-black">
-                    USTOZ AI
+                    Ministry of Digital Technologies of Uzbekistan
                   </div>
                 </div>
                 {/* CENTER */}
@@ -282,21 +281,20 @@ disciplinary teamwork abilities.{" "}
                 <div className="w-2/3 ">
                   {/* JOB TITLE */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg dark:text-black">
-                  WEB DEVELOPER
+                  SOFTWARE ENGINEER INTERN
                   </div>
                   {/* JOB DESC */}
                   <div className="p-3 text-sm italic">
-                  Independently managed the entire development
-process, gaining experience with HTML5, CSS3,
-JavaScript, and performance optimization.{" "}
+                  Developed full-stack applications using JavaScript, TypeScript, Django, and Node.js, focusing
+on user-friendly interfaces and scalable back-end systems.{" "}
                   </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">
-                    June 2023 - September 2024{" "}
+                    Nov 2024 - Jan 2025{" "}
                   </div>
                   {/* JOB COMPANY */}
                   <div className="p-1 rounded bg-white text-sm font-semibold w-fit dark:text-black">
-                    CIFRA ENERGY
+                    iTransition Team
                   </div>
                 </div>
               </div>
@@ -305,17 +303,17 @@ JavaScript, and performance optimization.{" "}
                 <div className="w-2/3 ">
                   {/* JOB TITLE */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg dark:text-black">
-                    FRONT-END DEVELOPER
+                  WEB DEVELOPER
                   </div>
                   {/* JOB DESC */}
                   <div className="p-3 text-sm italic">
-                  Developed and implemented front-end components for
-the merchant CRM system at crm.oy-gul.uz, ensuring
-the platform was user-friendly and visually appealing.{" "}
+                  Contributed to the full-cycle development of Oy-Gul.uz, an online flower marketplace,
+collaborating with a professional development team to build the platform from initial design to
+deployment.{" "}
                   </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">
-                    January 2024 - May 2024
+                    January 2024 - June 2024
                   </div>
                   {/* JOB COMPANY */}
                   <div className="p-1 rounded bg-white text-sm font-semibold w-fit dark:text-black">
